@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Saif Shortcuts",
+    "version": "1.0",
+    "description": "Custom keyboard shortcuts for Chrome.",
+    "permissions": [
+        "tabs",
+        "storage",
+        "clipboardRead",
+        "clipboardWrite"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon":"saifShortcuts.png"
+    },
+    "commands": {
+        "toggle-pin": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+X"
+            },
+            "description": "Pin or Unpin the current tab"
+        }
+    }
+}
